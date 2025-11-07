@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Routine Name="MainRoutine" Type="RLL">
+  <RLLContent>
+    <Rung Type="N">
+      <Text><![CDATA[DCS(Zone1_SS1,SAFETY GATE,EQUIVALENT - ACTIVE HIGH,500,AUTOMATIC,AUTOMATIC,AENT:1:I.Pt00Data,AENT:1:I.Pt01Data,AENT:1:I.CombinedInputStatus,Cmd_Zone1_FaultReset);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(Zone1_SS1.O1)OTE(Sts_Zone1_SS1_InputOK);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(Reset)OSF(Wrk_Zone1_OSF_SB,Wrk_Zone1_SafetyReset_OSF_OB);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[[XIC(Wrk_Zone1_SafetyReset_OSF_OB) ,XIC(Cmd_Zone1_OutputEnable) ]XIC(Sts_Zone1_SS1_InputOK)XIO(Zone1_K1K2.FP)OTE(Cmd_Zone1_OutputEnable);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[CROUT(Zone1_K1K2,NEGATIVE,500,Cmd_Zone1_OutputEnable,AENT:1:I.Pt07Data,AENT:1:I.Pt07Data,AENT:1:I.CombinedInputStatus,AENT:2:I.CombinedOutputStatus,Cmd_Zone1_FaultReset);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(Zone1_K1K2.O1)XIC(Zone1_K1K2.O2)[OTE(AENT:2:O.Pt00Data) ,OTE(AENT:2:O.Pt01Data) ];]]></Text>
+    </Rung>
+  </RLLContent>
+</Routine>

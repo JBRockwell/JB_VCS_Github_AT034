@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Module Name="CellGuard_1" CatalogNumber="1734-IB8S/B" Vendor="1" ProductType="35" ProductCode="15" Major="2" Minor="1" ParentModule="AENT" ParentModPortId="1" Inhibited="false" MajorFault="false" SafetyNetwork="16#0000_3f26_01e8_9c02" DataExchangeId="{CEF12207-60BA-4CE3-893C-4F8C1C783BB0}">
+  <EKey State="CompatibleModule" />
+  <Ports>
+    <Port Id="1" Address="1" Type="PointIO" Upstream="true" />
+  </Ports>
+  <Communications>
+    <ConfigData ConfigSize="82">
+      <Data Format="L5K"><![CDATA[[86,864,-1942921109,41028970,18042,131843,1000,131072,0,2,0,0,0,131072,0,2,0,0,769,0,0,0,0]]]></Data>
+    </ConfigData>
+    <Connections>
+      <Connection Name="Input" RPI="10000" Type="SafetyInput" EventID="0" ProgrammaticallySendEventTrigger="false" TimeoutMultiplier="2" NetworkDelayMultiplier="200" ReactionTimeLimit="40.064" MaxObservedNetworkDelay="0" Unicast="true">
+        <InputTag ExternalAccess="Read/Write">
+          <Data Format="Decorated">
+            <Structure DataType="AB:1734_IB8S_Safety3:I:0">
+              <DataValueMember Name="RunMode" DataType="BOOL" Value="0" />
+              <DataValueMember Name="ConnectionFaulted" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt00Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt01Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt02Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt03Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt04Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt05Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt06Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt07Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Muting01Status" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Muting03Status" DataType="BOOL" Value="0" />
+              <DataValueMember Name="InputPowerStatus" DataType="BOOL" Value="0" />
+              <DataValueMember Name="CombinedInputStatus" DataType="BOOL" Value="0" />
+            </Structure>
+          </Data>
+        </InputTag>
+      </Connection>
+      <Connection Name="Output" Type="SafetyOutput" EventID="0" ProgrammaticallySendEventTrigger="false" TimeoutMultiplier="2" NetworkDelayMultiplier="200" ReactionTimeLimit="60" MaxObservedNetworkDelay="0" Unicast="true">
+        <OutputTag ExternalAccess="Read/Write">
+          <Data Format="L5K"><![CDATA[[0]]]></Data>
+          <Data Format="Decorated">
+            <Structure DataType="AB:1734_IB8S:O:0">
+              <DataValueMember Name="Test00Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Test01Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Test02Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Test03Data" DataType="BOOL" Value="0" />
+            </Structure>
+          </Data>
+        </OutputTag>
+      </Connection>
+    </Connections>
+  </Communications>
+  <ExtendedProperties>
+    <public>
+      <ConfigID>103</ConfigID>
+      <CatNum>1734-IB8S</CatNum>
+    </public>
+  </ExtendedProperties>
+</Module>

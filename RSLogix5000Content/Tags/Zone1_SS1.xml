@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="Zone1_SS1" Class="Safety" TagType="Base" DataType="DCI_STOP" Constant="false" ExternalAccess="Read/Write">
+  <Data Format="L5K"><![CDATA[[97,1,0,500,327685,32,0,197377,256,97,2,4,0,2,0,2,500,16,0,0]]]></Data>
+  <Data Format="Decorated">
+    <Structure DataType="DCI_STOP">
+      <DataValueMember Name="EnableIn" DataType="BOOL" Value="1" />
+      <DataValueMember Name="ChannelA" DataType="BOOL" Value="0" />
+      <DataValueMember Name="ChannelB" DataType="BOOL" Value="0" />
+      <DataValueMember Name="InputStatus" DataType="BOOL" Value="0" />
+      <DataValueMember Name="Reset" DataType="BOOL" Value="0" />
+      <DataValueMember Name="RestartType" DataType="BOOL" Value="1" />
+      <DataValueMember Name="ColdStartType" DataType="BOOL" Value="1" />
+      <DataValueMember Name="SafetyFunction" DataType="DINT" Radix="Decimal" Value="1" />
+      <DataValueMember Name="InputType" DataType="DINT" Radix="Decimal" Value="0" />
+      <DataValueMember Name="DiscrepancyTime" DataType="DINT" Radix="Decimal" Value="500" />
+      <DataValueMember Name="EnableOut" DataType="BOOL" Value="1" />
+      <DataValueMember Name="O1" DataType="BOOL" Value="0" />
+      <DataValueMember Name="FP" DataType="BOOL" Value="1" />
+      <DataValueMember Name="FaultCode" DataType="DINT" Radix="Decimal" Value="32" />
+      <DataValueMember Name="DiagnosticCode" DataType="DINT" Radix="Decimal" Value="0" />
+    </Structure>
+  </Data>
+</Tag>

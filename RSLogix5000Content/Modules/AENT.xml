@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Module Name="AENT" CatalogNumber="1734-AENT/B" Vendor="1" ProductType="12" ProductCode="108" Major="5" Minor="1" ParentModule="Local" ParentModPortId="2" Inhibited="false" MajorFault="false" DataExchangeId="{4F2D90E2-F88E-49B2-94AA-9C99274FFCC4}">
+  <EKey State="CompatibleModule" />
+  <Ports>
+    <Port Id="1" Address="0" Type="PointIO" Upstream="false">
+      <Bus Size="3" />
+    </Port>
+    <Port Id="2" Address="192.168.1.11" Type="Ethernet" Upstream="true" />
+  </Ports>
+  <Communications CommMethod="805306369">
+    <Connections>
+      <Connection Name="Output" RPI="20000" Type="Output" EventID="0" ProgrammaticallySendEventTrigger="false" Unicast="true">
+        <InputTag ExternalAccess="Read/Write">
+          <Data Format="Decorated">
+            <Structure DataType="AB:1734_3SLOT:I:0">
+              <DataValueMember Name="SlotStatusBits0_31" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000" />
+              <DataValueMember Name="SlotStatusBits32_63" DataType="DINT" Radix="Binary" Value="2#0000_0000_0000_0000_0000_0000_0000_0000" />
+              <ArrayMember Name="Data" DataType="SINT" Dimensions="3" Radix="Binary">
+                <Element Index="[0]" Value="2#0000_0000" />
+                <Element Index="[1]" Value="2#0000_0000" />
+                <Element Index="[2]" Value="2#0000_0000" />
+              </ArrayMember>
+            </Structure>
+          </Data>
+        </InputTag>
+        <OutputTag ExternalAccess="Read/Write">
+          <Data Format="L5K"><![CDATA[[0,0,[0,0,0]]]]></Data>
+          <Data Format="Decorated">
+            <Structure DataType="AB:1734_3SLOT:O:0">
+              <ArrayMember Name="Data" DataType="SINT" Dimensions="3" Radix="Binary">
+                <Element Index="[0]" Value="2#0000_0000" />
+                <Element Index="[1]" Value="2#0000_0000" />
+                <Element Index="[2]" Value="2#0000_0000" />
+              </ArrayMember>
+            </Structure>
+          </Data>
+        </OutputTag>
+      </Connection>
+    </Connections>
+  </Communications>
+  <ExtendedProperties>
+    <public>
+      <ConfigID>262145</ConfigID>
+      <CatNum>1734-AENT</CatNum>
+    </public>
+  </ExtendedProperties>
+</Module>

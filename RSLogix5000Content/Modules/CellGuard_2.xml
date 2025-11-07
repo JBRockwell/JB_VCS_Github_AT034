@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Module Name="CellGuard_2" CatalogNumber="1734-OB8S/B" Vendor="1" ProductType="35" ProductCode="16" Major="2" Minor="1" ParentModule="AENT" ParentModPortId="1" Inhibited="false" MajorFault="false" SafetyNetwork="16#0000_3f26_01e8_9c02" DataExchangeId="{92DCC55C-6DBF-4B67-BC0C-C14E73650DFA}">
+  <EKey State="CompatibleModule" />
+  <Ports>
+    <Port Id="1" Address="2" Type="PointIO" Upstream="true" />
+  </Ports>
+  <Communications>
+    <ConfigData ConfigSize="26">
+      <Data Format="L5K"><![CDATA[[30,864,-867385392,32618943,16166,33686504,0,16842752,257]]]></Data>
+    </ConfigData>
+    <Connections>
+      <Connection Name="Input" RPI="10000" Type="SafetyInput" EventID="0" ProgrammaticallySendEventTrigger="false" TimeoutMultiplier="2" NetworkDelayMultiplier="200" ReactionTimeLimit="40.064" MaxObservedNetworkDelay="0" Unicast="true">
+        <InputTag ExternalAccess="Read/Write">
+          <Data Format="Decorated">
+            <Structure DataType="AB:1734_OB8S_Safety3:I:0">
+              <DataValueMember Name="RunMode" DataType="BOOL" Value="0" />
+              <DataValueMember Name="ConnectionFaulted" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt00Readback" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt01Readback" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt02Readback" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt03Readback" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt04Readback" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt05Readback" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt06Readback" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt07Readback" DataType="BOOL" Value="0" />
+              <DataValueMember Name="OutputPowerStatus" DataType="BOOL" Value="0" />
+              <DataValueMember Name="CombinedOutputStatus" DataType="BOOL" Value="0" />
+            </Structure>
+          </Data>
+        </InputTag>
+      </Connection>
+      <Connection Name="Output" Type="SafetyOutput" EventID="0" ProgrammaticallySendEventTrigger="false" TimeoutMultiplier="2" NetworkDelayMultiplier="200" ReactionTimeLimit="60" MaxObservedNetworkDelay="0" Unicast="true">
+        <OutputTag ExternalAccess="Read/Write">
+          <Data Format="L5K"><![CDATA[[0]]]></Data>
+          <Data Format="Decorated">
+            <Structure DataType="AB:1734_OB8S:O:0">
+              <DataValueMember Name="Pt00Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt01Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt02Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt03Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt04Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt05Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt06Data" DataType="BOOL" Value="0" />
+              <DataValueMember Name="Pt07Data" DataType="BOOL" Value="0" />
+            </Structure>
+          </Data>
+        </OutputTag>
+      </Connection>
+    </Connections>
+  </Communications>
+  <ExtendedProperties>
+    <public>
+      <ConfigID>204</ConfigID>
+      <CatNum>1734-OB8S</CatNum>
+    </public>
+  </ExtendedProperties>
+</Module>

@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="Reset" TagType="Alias" Radix="Decimal" AliasFor="AENT:1:I.Pt04Data" ExternalAccess="Read/Write" DataExchangeId="{F3B421B0-FB31-4BCE-9F5C-F75ADD427C64}" />

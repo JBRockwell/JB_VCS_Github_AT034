@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tag Name="Cmd_Zone1_FaultReset" TagType="Alias" Radix="Decimal" AliasFor="AENT:1:I.Pt05Data" ExternalAccess="Read/Write" DataExchangeId="{16C0D46C-931D-4E83-A771-29887C072F59}" />
