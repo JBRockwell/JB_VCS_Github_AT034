@@ -2,7 +2,10 @@
 <Routine Name="MainRoutine" Type="RLL">
   <RLLContent>
     <Rung Type="N">
-      <Text><![CDATA[;]]></Text>
+      <Text><![CDATA[XIC(JB_Tag1.0)OTE(JB_Tag1.1);]]></Text>
+    </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(JB_Tag1.10)OTE(JB_Tag1.11);]]></Text>
     </Rung>
   </RLLContent>
 </Routine>
