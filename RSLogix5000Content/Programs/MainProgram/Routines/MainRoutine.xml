@@ -7,5 +7,8 @@
     <Rung Type="N">
       <Text><![CDATA[XIC(JB_Tag1.10)OTE(JB_Tag1.11);]]></Text>
     </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[XIC(JB_Tag1.12)OTE(JB_Tag1.13);]]></Text>
+    </Rung>
   </RLLContent>
 </Routine>
