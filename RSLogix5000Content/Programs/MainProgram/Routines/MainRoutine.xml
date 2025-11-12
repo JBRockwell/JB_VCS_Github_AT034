@@ -10,5 +10,8 @@
     <Rung Type="N">
       <Text><![CDATA[XIC(JB_Tag1.12)OTE(JB_Tag1.13);]]></Text>
     </Rung>
+    <Rung Type="N">
+      <Text><![CDATA[JSR(ST,0);]]></Text>
+    </Rung>
   </RLLContent>
 </Routine>
